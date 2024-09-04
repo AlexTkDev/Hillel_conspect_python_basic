@@ -15,13 +15,13 @@ RUN apt-get update -y \
 
 
 # Install project dependencies
-COPY ./Pipfile ./Pipfile.lock /
+COPY Pipfile ./Pipfile.lock /
 RUN pipenv sync --system
 
 
 # cd /app (get or create)
 WORKDIR /app
-COPY ./ ./
+COPY ../../../../Desktop/hillel_support_2024_p2 ./
 
 EXPOSE 8000
 

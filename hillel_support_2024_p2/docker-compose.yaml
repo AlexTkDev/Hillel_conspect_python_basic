@@ -30,7 +30,7 @@ services:
 
   api:  &app
     build:
-      context: .
+      context: ../../../../Desktop/hillel_support_2024_p2
       dockerfile: Dockerfile
     image: hillel_support
     container_name: hillel_support_api
